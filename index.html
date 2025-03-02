@@ -1,18 +1,43 @@
 <DOCTYPE! html>
 <html lang = "en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Travel Blog</title>
     <link rel = "stylesheet" href = "./style.css">
     <link rel ="stylesheet" href = "./flag-icons.min.css">
-</head>
-<body>
+ </head>
+ <body>
     <header>
         <h1>My Travel Blog</h1>
         <p>Exploring the world, one place at a time</p>
     </header>
-    <section class="hero">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Locations ▾</a>
+                <ol class="dropdown-content">
+                    <li><a href="#china">China<i class = "fi fi-cn"></i></a></li>
+                    <li><a href="#greece">Greece <i class = "fi fi-gr "></i></a></li>
+                    <li><a href="#peru">Peru <i class = "fi fi-pe "></i></a></li>
+                    <li><a href="#dubai">Dubai <i class = "fi fi-ae "></i></a></li>
+                    <li><a href="#french-polynesia">French Polynesia <i class = "fi fi-pf "></i></a></li>
+                </ol> 
+            </li>
+            <li><a href="#newsletter-form">Newsletter</a></li>
+        </ul>
+        <div id = "darkmode">
+            <label class ="switch">
+                <input type="checkbox" id = "darkmodeToggle">
+                <span class="slider"></span>
+            </label>
+            <p>Dark mode</p>
+        </div>
+        
+        
+    </nav>
+    <section id="home">
         <h2>Welcome to My Adventures!</h2>
         <p>Join me as I explore breathtaking places.
             From the bustling cities of china, to the white-washed buildings of Greece, 
@@ -28,8 +53,8 @@
                <div class = "china-img">
                  <img src="https://cdn.getyourguide.com/img/tour/7c16cf602517a89b749c71ace374f81f06954329038bd1c911c4e4770c4ef542.jpg/98.jpg" alt="Chonqing at night.">
                     <img src ="https://content.r9cdn.net/rimg/dimg/cf/47/e7a46c58-city-30961-16779fb3c85.jpg?width=1366&height=768&xhint=1519&yhint=1077&crop=true" alt="Chonqing Skyscrapers">
-                    <p class = "Label">Chonquing Night life </p>
-                    <p class = "Label">Chonqing Skyscrapers </p>
+                    <p class="label">Chonquing Night life </p>
+                    <p class="label">Chonqing Skyscrapers </p>
                </div> 
              <p class="article-content">Chonqing is one of the most dynamic and rapidly growing cities, with stunning natural beauty, cultural heritage and a vibrant night life.
                 It has a vibrant night life with dazzling lights which reflect off the rivers.
@@ -47,8 +72,8 @@
                 <div id = "greece-img">
                     <img src="https://lh5.googleusercontent.com/p/AF1QipPYslcUzG0KJYTVvsEjbqawOMnmoIws2w7R026U=w675-h390-n-k-no" alt="Red Cliffs and Black sand beach ">
                     <img src ="https://images.unsplash.com/photo-1592468662684-0376320a0842?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNhbnRvcmluaSUyMHN1bnNldHxlbnwwfHwwfHx8MA%3D%3D" alt="Sunset ">
-                       <p class = "Label">Red Cliffs and Black sand beach </p>
-                       <p class = "Label">Sunset</p>
+                       <p class="label">Red Cliffs and Black sand beach </p>
+                       <p class="label">Sunset</p>
                 </div> 
                 <p>Santorini, the jewel of the Aegean Sea, is one of the most breathtaking destinations.
                     It boasts of white-washed buildings, stunning sunsets, and crystal-clear waters.
@@ -66,11 +91,11 @@
                 <div id ="peru-img">
                 <img src="https://caminoincamachupicchu.org/cmingutd/wp-content/uploads/2021/06/machu-picchu-llama.jpg" alt="Ruins at Machu Picchu">
                 <img src="https://images.squarespace-cdn.com/content/v1/5f0df38c634e797196d51e6c/1657554067909-962E1VTXW50I0DOPZMG5/Machu_Picchu_Inertianetwork_Travel_Peru_Adventure.jpg" alt="Machu Picchu Ruins">
-                <p>Local Wildlife</p>
-                <p>UNESCO site</p>
+                <p class="label">Local Wildlife</p>
+                <p class="label">UNESCO site</p>
                 </div>
               <p>
-                Machu Picchu, the UNESCO World Heritage site, often refered to as the<a href = "https://en.wikipedia.org/wiki/Machu_Picchu">"Lost City of the I
+                Machu Picchu, the UNESCO World Heritage site, often refered to as the<a href = "https://en.wikipedia.org/wiki/Machu_Picchu">"Lost City of the Incas"</a>
                 captivate travellers with its well-preserved ruins, intricate stonework, andpanoramic mountain views. Visitors can reach Machu Picchu viathe scenic <b>Inca Trail</b> a multi-day trek, with 5 days providing the most immersive experience, 
                 through ancient paths and cloud forests,or opt for the convenient train ride from Cusco. Exploring the site reveals fascinating landmarks like 
                 <b>Temple of the sun, Intihuatana Stone and Huayana Picchu</b>, offering insight into Incan engineering and spirituality.
@@ -83,8 +108,8 @@
               <div id = "dxb-img">
                 <img src="https://images.prismic.io/11prop-blog/ZkOk6iol0Zci9H_w_ApartmentstoEnjoyBurjKhalifaNightViews.jpg?auto=format%2Ccompress&fit=max&w=1920" alt="Burj Khalifa">
                 <img src="https://lezrove.com/wp-content/uploads/2024/10/V1-01.jpg" alt="Tourist Attractions">
-                <p>Burj Khalifa</p>
-                <p>Tourist Attractions</p>
+                <p class="label">Burj Khalifa</p>
+                <p class="label">Tourist Attractions</p>
              </div>
              <p id = "dxb-article">Dubai,UAE, is a dazzlig metropolis that seamlssly blends futuristic innovation with rich cultural heritage, making it a must -visit destination for travellers.
                 Home to iconic landmarks like the <b>Burj Khalifa</b>, the world's tallest building, and the luxurious <b>Palm Jumeirah</b>,
@@ -95,13 +120,13 @@
                 or relaxing on pristine beaches, Dubai delivers an unforgettable mixof luxury, adventure and cultural charm. 
              </p>
            </article>
-           <article>
+           <article id = "french-polynesia">
             <h2><li>Bora Bora,French Polynesia<i class = "fi fi-pf "></i></li></h2>
             <div id = "pf-img">
                 <img src="https://www.luxurylifestylemag.co.uk/wp-content/uploads/2024/02/bigstock-Travel-vacation-Tahiti-hotel-o-325637719.jpg" alt="Overwater Bungallows">
                 <img src="https://c4.wallpaperflare.com/wallpaper/668/110/433/bora-bora-resort-beach-french-polynesia-mountain-palm-trees-sea-summer-tropical-nature-landscape-clouds-shrubs-wallpaper-preview.jpg" alt="Beach View">
-                <p>Overwater Bungallows</p>
-                <p>Beach View</p>
+                <p class="label">Overwater Bungallows</p>
+                <p class="label">Beach View</p>
             </div>
             <p id = "pf-article">
                 Bora Bora, the jewel of French Polynesia, is a paradise known for its crystal-clear turquoise waters, lush green mountains, and luxurious overwater bungalows. 
@@ -114,6 +139,18 @@
 
         </ol>
     </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Feel free to Subscribe to Our Newsletter</h2>
+            <p>Get information on updates to the blog with new exciting locations.</p>
+            <form id="newsletter-form">
+                <p id="message"></p>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            
+        </div>
+    </footer>
     <script src="index.js"></script>
-</body>
-</html>,
+ </body>
+</html>
